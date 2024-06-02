@@ -115,4 +115,26 @@
             </div>
         </div>
     </div>
+    
+    <!-- Sweet Alert JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Display Sweet Alert when Sign In button is clicked
+        swal({
+            title: "Signed In!",
+            text: "Thank you!",
+            icon: "success",
+            button: "OK"
+        }).then((value) => {
+            // Once the alert is closed, redirect the user to index.html
+            window.location.href = "index.html";
+        });
+    });
+</script>
+
+    
 </body>
